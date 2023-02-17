@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap');
+
+:root{
+    /*colors*/
+    --color1:#F16718; 
+    --color2:#FF9B62;
+    --color3:#162542;
+    --color4:#7B8BAD;
+    --color5:#E8EFF2;
+    --color6:#FFFFFF;   
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color:hsl(22, 100%, 100%);
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+p{
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7B8BAD;
+}
+
+h1{
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+a{
+    text-decoration: none;
+    color: #7B8BAD;
+    text-transform: uppercase;
+font-family: 900;
+font-size: 16px;
+font-family: 'Barlow', sans-serif;
+}
+
+header{
+    margin-bottom: 2rem;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+/* MAIN */
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.btn{
+    padding: 0.65rem;
+    background-color: #E8EFF2;
+    color: #162542;
+    margin-top: -5px;
+    border-radius: 0.5rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+.btn:hover{
+    background-color: #162542;
+    color: #E8EFF2;
+}
+
+.btn2:hover{
+    background-color:#FF9B62;
+    color: #E8EFF2;
+}
+
+.btn2{
+    padding: 0.65rem;
+    background-color: var(--color1);
+    color: #162542;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    border-radius: 0.5rem;
+    font-size: 16px;
+}
+
+
+
+.btn3{
+    padding: 0.65rem;
+    background-color: var(--color6);
+    color: #7B8BAD;
+   
+    border-radius: 0.5rem;
+    font-size: 16px;
+}
+
+#flex{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: relative;
+    left: -2.5rem;
+}
+
+.photo img{
+    border-radius: 1rem;
+}
+#containerone{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+#containerone p{
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+#firstpic{
+    position: relative;
+left: 7%;
+
+
+}
+
+
+
+#one{
+    margin-left: -2rem;
+    padding-bottom: 1.5rem;
+}
+
+#containertwo h2{
+padding:2.5rem ;
+text-align: center;
+}
+
+#containertwo p{
+    text-align: center;
+    
+}
+
+
+.flexbox{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.box1 img, .box2 img, .box3 img, .box4 img {
+    background-color: #F16718;
+    width: fit-content;
+    padding: 1.3rem;
+    border-radius: 1rem;
+}
+
+.headlogo{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.flexbox h3{
+    width: 55%;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.footer p{
+    text-align: center;
+    margin-top: 6rem;
+}
+
+
+/* MAIN END */
+
+@media screen and (min-width:768px){
+    body{
+        padding: 2.5rem 0 2rem 2.5rem;
+        
+    }
+    
+    #container1{
+        display: flex;
+        flex-direction: row;
+        column-gap: 3rem;
+        overflow-x: hidden;
+        
+    }
+
+    #container2{
+        display: flex;
+        flex-direction: column;
+        column-gap: 3rem;
+        overflow-x: hidden;
+        padding-right: 1.5rem;
+    }
+
+    #containertwo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;      
+    }
+
+    #containertwo p{
+        text-align: left;
+    }
+
+    #firstpic{
+        margin-left: 5rem;
+        padding-right: 0;
+    }
+
+    #flex{
+        left: -0.5rem;
+    }
+
+    .flexbox{
+        display: grid;
+        grid-template-columns: repeat(2,1.5fr);
+        grid-template-rows: repeat(2,1.5fr);
+       text-align: left;
+       align-items: center;
+       justify-content: center;
+       column-gap: 4rem;
+
+    }
+
+    .flexbox p{
+        padding-right: 2.5rem;
+    }
+
+    .box1{
+        margin-top: 10px;
+    }
+
+    .box4{
+        margin-bottom: 10px;
+    }
+  
+    .box1 h3, .box2 h3,.box3 h3,.box4 h3{
+        margin-left: 0;
+        
+    }
+
+    .box1 img, .box2 img, .box3 img, .box4 img {
+        padding: auto;
+    }
+}
+
+@media screen and (min-width:978px) {
+    body{
+        padding:3rem 8rem 3rem 8rem;
+        background-position: top left, top right;
+        background-size: 9% 10%;
+        background-position-y: 57.5%, 8.5%;
+        background-repeat: no-repeat, no-repeat;
+        background-image:url(./starter-code/assets/shared/pattern-square.svg), url(./starter-code/assets/shared/pattern-square.svg);
+    }
+
+    #container1{
+        overflow-x: visible;
+    }
+
+    #containerone p{
+        padding-right: 6rem;
+    }
+
+    #firstpic img{
+        margin-left: -7.5rem;
+    }
+
+    #container2{
+        display: flex;
+        flex-direction: row;
+        column-gap: 5rem;
+    }
+    #containertwo{
+        flex-direction: column;
+        text-align: left;
+       margin-right: -18rem;
+    }
+
+    #containertwo p, #containertwo h2{
+        padding-right: 51%;
+    }
+
+
+    #containertwo h2{
+        margin-bottom: -1rem;
+    }
+
+    #containertwo h2{
+        text-align: left;
+        padding-left: 0;
+
+    }
+
+    .flexbox{
+        display: flex;
+        flex-direction: row;
+column-gap: 5rem;
+text-align: left;
+margin-right: -3rem;
+      
+    }
+
+    .box1,.box2, .box3,.box4{
+margin-right: -5rem;
+
+    }
+
+    .box1 p,.box2 p, .box3 p,.box4 p{
+        padding-right: 2rem;
+    }
+
+    .box2 h3, .box3 h3{
+        font-size: 21px;
+        font-family: 500;
+    }
+
+    .box2 img, .box4 img{
+        padding-right: 1.2rem;
+        padding-top: 1rem;
+        padding-left: 1.2rem;
+        padding-bottom: 1rem;
+    }
+  
+}
